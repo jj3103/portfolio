@@ -3,10 +3,15 @@ import { Logos } from '../components'
 
 
 function Home() {
+
+    const handleClickHireMe = () => {
+        window.location.href = "mailto:jainjayesh2003@gmail.com"
+    }
+
     return (
         <section
             id='i1'
-            className='flex justify-between h-screen '>
+            className='flex justify-between h-screen py-10'>
             <div className='w-1/2'>
                 <h1
                     style={{ letterSpacing: '-0px', wordSpacing: '15px' }}
@@ -38,6 +43,7 @@ function Home() {
                         Download CV
                     </button>
                     <button
+                        onClick={handleClickHireMe}
                         className='border-2 px-6 py-3 rounded text-xl bg-black border-black text-white'>
                         Hire Me Now
                     </button>
@@ -47,9 +53,9 @@ function Home() {
                 </div>
 
             </div>
-            <div className='w-1/2 h-screen py-1'>
+            <div className='w-1/2 h-screen '>
                 <img
-                    src='/jayesh.jpeg'
+                    src='/j1.jpeg'
                     alt='Jayesh'
                     className=' w-200 h-210 object-cover'
                 />

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 function Navitems() {
 
+    const [activeSection, setActiveSection] = useState('i1');
 
     const handleScrollSection = (id) => {
         const element = document.getElementById(id);
@@ -10,7 +11,25 @@ function Navitems() {
             behavior: 'smooth',
             block: 'start'
         })
+        setActiveSection(id)
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section')
+            let currentSection = 'i1';
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 150 && rect.bottom >= 150) {
+                    currentSection = section.id;
+                }
+            })
+            setActiveSection(currentSection)
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     const navItems = [
         {
@@ -35,7 +54,9 @@ function Navitems() {
         <ul className='flex space-x-6'>
             {navItems.map((items) => (
                 <li key={items.name}>
-                    <button onClick={() => handleScrollSection(items.id)}>
+                    <button
+                        className={activeSection === items.id ? "text-blue-500 font-bold" : "text-gray-500"}
+                        onClick={() => handleScrollSection(items.id)}>
                         {items.name}
                     </button>
                 </li>

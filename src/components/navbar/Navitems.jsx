@@ -55,7 +55,7 @@ function Navitems() {
             {navItems.map((items) => (
                 <li key={items.name}>
                     <button
-                        className={activeSection === items.id ? "text-blue-500 font-bold" : "text-gray-500"}
+                        className={activeSection === items.id ? "text-black font-bold" : "text-gray-500"}
                         onClick={() => handleScrollSection(items.id)}>
                         {items.name}
                     </button>

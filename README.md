@@ -58,16 +58,13 @@ Visit http://localhost:5173/ 🚀
 ```
 
 ✨ Features
+
 ✅ Fast performance with Vite
-
 ✅ Smooth animations using Framer Motion
-
 ✅ Responsive design
-
 ✅ Easy navigation
 
 🤝 Connect With Me
 
 📧 Email: jainjayesh2003@gmail.com
-
 🔗 LinkedIn: https://www.linkedin.com/in/jayesh-jain-8b65bb188/

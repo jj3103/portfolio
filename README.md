@@ -1,8 +1,54 @@
-# React + Vite
+# 🚀 My Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! Here, I showcase my skills, projects, and experience in web development through an interactive and smooth UI.  
 
-Currently, two official plugins are available:
+Built with **React.js & Vite**, it features seamless animations powered by **Framer Motion**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Sections  
+🔹 **Home** - A dynamic introduction.  
+🔹 **About** - My background & experience.  
+🔹 **Skills** - Technologies & tools I use.  
+🔹 **Projects** - A showcase of my work.  
+
+## ⚡ Tech Stack  
+- **Vite + React.js**  
+- **Framer Motion** (for smooth animations & slideshow)  
+- **CSS / TailwindCSS**  
+
+## 🖼️ Screenshots  
+### 🎨 Homepage  
+![Homepage](images/homepage.png)  
+
+### 🛠 About Section  
+![Skills](images/skills-section.png)  
+
+### 🛠 Skills Section  
+![Skills](images/skills-section.png)  
+
+### 📂 Projects Section  
+![Projects](images/projects-section.png)  
+
+## 📥 Installation & Setup (Vite)  
+If you want to run this project locally, follow these steps:  
+```bash
+1️⃣ Clone the repository:
+git clone https://github.com/your-username/your-portfolio.git
+
+2️⃣ Navigate to the project directory:
+cd your-portfolio
+
+3️⃣ Install dependencies:
+npm install
+
+4️⃣ Start the development server:
+npm run dev
+
+5️⃣ Open the project in your browser:
+Visit http://localhost:5173/ 🚀
+
+
+
+
+
+
+

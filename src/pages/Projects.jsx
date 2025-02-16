@@ -55,19 +55,19 @@ function Projects() {
                 By utilizing the power of the MERN stack, I turn creative concepts into robust, dynamic applications that provide intuitive user experiences and efficient solutions.
             </h4>
 
-            {/* **Slider Container** */}
+
             <div className="relative w-[900px] h-[450px] flex justify-center items-center overflow-hidden">
-                {/* **Sliding Cards Container** */}
+
                 <motion.div className="flex items-center justify-center">
                     {projects.map((project, index) => {
-                        let positionClass = "hidden"; // Default: Hide cards
+                        let positionClass = "hidden";
 
                         if (index === currentIndex) {
-                            positionClass = "z-10 scale-110 opacity-100"; // Center card
+                            positionClass = "z-10 scale-110 opacity-100";
                         } else if (index === (currentIndex - 1 + projects.length) % projects.length) {
-                            positionClass = "-translate-x-[100%] scale-90 opacity-50 -z-10"; // Left card behind
+                            positionClass = "-translate-x-[100%] scale-90 opacity-100 -z-10";
                         } else if (index === (currentIndex + 1) % projects.length) {
-                            positionClass = "translate-x-[105%] scale-90 opacity-50 -z-10"; // Right card behind
+                            positionClass = "translate-x-[105%] scale-90 opacity-100 -z-10";
                         }
 
                         return (
@@ -91,17 +91,3 @@ function Projects() {
 }
 
 export default Projects;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

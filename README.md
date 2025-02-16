@@ -55,10 +55,14 @@ npm run dev
 5️⃣ Open the project in your browser:
 Visit http://localhost:5173/ 🚀
 
-
-
-
-
-
-
 ```
+
+✨ Features
+✅ Fast performance with Vite
+✅ Smooth animations using Framer Motion
+✅ Responsive design
+✅ Easy navigation
+
+🤝 Connect With Me
+📧 Email: jainjayesh@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/jayesh-jain-8b65bb188/

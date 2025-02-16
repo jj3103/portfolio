@@ -9,28 +9,28 @@ const projects = [
         name: "To-Do List",
         image: "/Todo.png",
         description: "A task management app allowing users to add, edit, and delete tasks efficiently. Uses Redux Toolkit for state management and Context API for lightweight state handling.",
-        github: "https://github.com/your-github/todo-list",
+        github: "https://github.com/jj3103/Todo",
     },
     {
         id: 2,
         name: "Portfolio",
         image: "/Portfolio.png",
         description: "A personal portfolio website showcasing skills, projects, and contact information. Features smooth animations and a modern UI built with React.",
-        github: "https://github.com/your-github/portfolio",
+        github: "https://github.com/jj3103/portfolio",
     },
     {
         id: 3,
         name: "Blog Web App",
         image: "/BlogImage.png",
         description: "A dynamic blogging platform allowing users to create, edit, and delete blog posts. Uses Appwrite for backend services and React Hook Form for form validation.",
-        github: "https://github.com/your-github/blog-web-app",
+        github: "https://github.com/jj3103/Blog",
     },
     {
         id: 4,
         name: "HR Management System",
         image: "/HR-1.png",
         description: "A full-stack HR system for managing personnel records, attendance, and roles. Built using the MERN stack with role-based authentication.",
-        github: "https://github.com/your-github/hr-management",
+        github: "https://github.com/jj3103/HR-management",
     },
 ];
 

@@ -35,28 +35,6 @@ Built with **React.js & Vite**, it features seamless animations powered by **Fra
 
 ![Projects](/public/images/projects.png)
 
-## 📥 Installation & Setup (Vite)
-
-If you want to run this project locally, follow these steps:
-
-```bash
-1️⃣ Clone the repository:
-git clone https://github.com/your-username/your-portfolio.git
-
-2️⃣ Navigate to the project directory:
-cd your-portfolio
-
-3️⃣ Install dependencies:
-npm install
-
-4️⃣ Start the development server:
-npm run dev
-
-5️⃣ Open the project in your browser:
-Visit http://localhost:5173/ 🚀
-
-```
-
 ✨ Features
 
 ✅ Fast performance with Vite

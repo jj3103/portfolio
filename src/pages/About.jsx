@@ -38,7 +38,7 @@ function About() {
                     You can also follow me here:
                 </h2>
                 <div className='pl-20 mt-2'>
-                    <Logos className='border-1 rounded px-2 py-2 bg-blue-500 border-blue-400' iconColor='text-white' />
+                    <Logos className='border-1 rounded px-2 py-2 bg-blue-500 border-blue-400' iconColor='text-white' visibleLogs={3} />
                 </div>
             </div>
         </section>

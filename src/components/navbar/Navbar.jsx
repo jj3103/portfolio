@@ -16,7 +16,7 @@ function Navbar() {
 
             <Navitems />
 
-            <Logos className='border-1 rounded-full px-1 py-1 bg-white border-white' />
+            <Logos className='border-1 rounded-full px-1 py-1 bg-white border-white' visibleLogs={4} />
 
             <div className='pl-10 border-l min-h-[60px] border-gray-300 flex items-center'>
                 <Contactme />

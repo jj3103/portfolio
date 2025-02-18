@@ -45,7 +45,7 @@ function Home() {
                 </div>
 
 
-                <Logos />
+                <Logos visibleLogs={4} />
             </div>
 
 

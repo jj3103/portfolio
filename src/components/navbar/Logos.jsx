@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa'
 
 
-function Logos({ className, iconColor = 'text-black' }) {
+function Logos({ className, iconColor = 'text-black', visibleLogs = 4 }) {
 
     const handleClick = (link) => {
         window.open(link, '_blank')
@@ -32,7 +32,7 @@ function Logos({ className, iconColor = 'text-black' }) {
     ]
     return (
         <ul className='flex space-x-6'>
-            {logos.map((logo) => (
+            {logos.slice(0, visibleLogs).map((logo) => (
                 <a onClick={() => handleClick(logo.link)} className={`${className}`} key={logo.name}>
                     {logo.icon}
                 </a>

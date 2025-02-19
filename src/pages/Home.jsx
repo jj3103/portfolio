@@ -7,6 +7,15 @@ function Home() {
     const handleClickHireMe = () => {
         window.location.href = "mailto:jainjayesh2003@gmail.com"
     }
+    const handleDownloadCv = () => {
+        const cvUrl = '/CV/jayeshResume.pdf'
+        const link = document.createElement("a")
+        link.href = cvUrl;
+        link.download = "jayeshResume.pdf"
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+    }
 
     return (
         <section id="i1" className="flex justify-between h-screen py-10">
@@ -36,7 +45,7 @@ function Home() {
 
 
                 <div className="flex space-x-6">
-                    <button className="border-2 px-6 py-3 rounded text-xl bg-blue-500 border-blue-500 text-white">
+                    <button onClick={handleDownloadCv} className="border-2 px-6 py-3 rounded text-xl bg-blue-500 border-blue-500 text-white">
                         Download CV
                     </button>
                     <button onClick={handleClickHireMe} className="border-2 px-6 py-3 rounded text-xl bg-black border-black text-white">

@@ -1,4 +1,5 @@
 
+
 import { useState, useEffect } from "react";
 import { Projectcard } from "../components";
 import { motion } from "framer-motion";
@@ -42,28 +43,27 @@ function Projects() {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 3000);
+        const interval = setInterval(nextSlide, 4000); // Slightly slower for mobile users
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <section id="i4" className="min-h-screen flex flex-col justify-center items-center">
-            <h1 className="font-bold text-4xl mb-5" style={{ wordSpacing: "15px" }}>
-                My Personal Projects :-
+        <section id="i4" className="min-h-screen flex flex-col justify-center items-center px-4">
+            <h1 className="font-bold text-3xl md:text-4xl mb-4 text-center">
+                My Personal Projects:
             </h1>
-            <h4 className="mb-10 text-gray-400 text-center w-[80%]">
+            <h4 className="mb-6 text-gray-400 text-center w-full md:w-[80%] px-2">
                 By utilizing the power of the MERN stack, I turn creative concepts into robust, dynamic applications that provide intuitive user experiences and efficient solutions.
             </h4>
 
-
-            <div className="relative w-[900px] h-[450px] flex justify-center items-center overflow-hidden">
-
+            {/* Carousel Wrapper */}
+            <div className="relative w-full max-w-[900px] h-[400px] sm:h-[450px] flex justify-center items-center overflow-hidden">
                 <motion.div className="flex items-center justify-center">
                     {projects.map((project, index) => {
                         let positionClass = "hidden";
 
                         if (index === currentIndex) {
-                            positionClass = "z-0 scale-110 opacity-100";
+                            positionClass = "z-0 scale-105 opacity-100";
                         } else if (index === (currentIndex - 1 + projects.length) % projects.length) {
                             positionClass = "-translate-x-[95%] scale-90 opacity-100 -z-10";
                         } else if (index === (currentIndex + 1) % projects.length) {
@@ -73,7 +73,7 @@ function Projects() {
                         return (
                             <motion.div
                                 key={index}
-                                className={`absolute w-[400px] transition-all duration-500 ease-in-out ${positionClass}`}
+                                className={`absolute w-[90%] sm:w-[400px] transition-all duration-500 ease-in-out ${positionClass}`}
                             >
                                 <Projectcard
                                     name={project.name}
@@ -86,6 +86,7 @@ function Projects() {
                     })}
                 </motion.div>
             </div>
+
         </section>
     );
 }

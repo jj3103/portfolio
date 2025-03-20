@@ -7,7 +7,7 @@ function Footer() {
     };
 
     return (
-        <footer className="absolute bottom-0 left-0 w-full bg-gray-800 p-4 flex justify-around text-white overflow-hidden">
+        <footer className="fixed bottom-0 left-0 w-full bg-gray-800 p-4 flex justify-around text-white overflow-hidden">
             <button onClick={() => handleScrollSection("i1")} className="focus:text-blue-400">Home</button>
             <button onClick={() => handleScrollSection("i2")} className="focus:text-blue-400">About</button>
             <button onClick={() => handleScrollSection("i3")} className="focus:text-blue-400">Skills</button>

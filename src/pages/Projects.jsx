@@ -63,9 +63,9 @@ function Projects() {
                         let positionClass = "hidden";
 
                         if (index === currentIndex) {
-                            positionClass = "z-0 scale-105 opacity-100";
+                            positionClass = "z-0 scale-105 opacity-100 sm:translate-x-0 translate-x-[-5%]";
                         } else if (index === (currentIndex - 1 + projects.length) % projects.length) {
-                            positionClass = "-translate-x-[95%] scale-90 opacity-100 -z-10";
+                            positionClass = "sm:-translate-x-[100%] -translate-x-[150%] scale-90 opacity-100 -z-10";
                         } else if (index === (currentIndex + 1) % projects.length) {
                             positionClass = "translate-x-[110%] scale-90 opacity-100 -z-10";
                         }

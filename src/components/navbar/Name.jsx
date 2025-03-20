@@ -5,7 +5,7 @@ function Name() {
     return (
         <h1
 
-            className='text-5xl  custom-font  text-black font-bold'>
+            className='sm:text-5xl text-4xl  custom-font  text-black font-bold'>
             Jayesh
         </h1>
     )

@@ -31,7 +31,7 @@ function Logos({ className, iconColor = 'text-black', visibleLogs = 4 }) {
         },
     ]
     return (
-        <ul className='flex space-x-6'>
+        <ul className="flex space-x-6">
             {logos.slice(0, visibleLogs).map((logo) => (
                 <a onClick={() => handleClick(logo.link)} className={`${className}`} key={logo.name}>
                     {logo.icon}

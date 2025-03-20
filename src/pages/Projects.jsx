@@ -63,11 +63,11 @@ function Projects() {
                         let positionClass = "hidden";
 
                         if (index === currentIndex) {
-                            positionClass = "z-10 scale-110 opacity-100";
+                            positionClass = "z-0 scale-110 opacity-100";
                         } else if (index === (currentIndex - 1 + projects.length) % projects.length) {
-                            positionClass = "-translate-x-[100%] scale-90 opacity-100 -z-10";
+                            positionClass = "-translate-x-[95%] scale-90 opacity-100 -z-10";
                         } else if (index === (currentIndex + 1) % projects.length) {
-                            positionClass = "translate-x-[105%] scale-90 opacity-100 -z-10";
+                            positionClass = "translate-x-[110%] scale-90 opacity-100 -z-10";
                         }
 
                         return (

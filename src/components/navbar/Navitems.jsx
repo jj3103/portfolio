@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 
 function Navitems() {
 
     const [activeSection, setActiveSection] = useState('i1');
+    const lastActiveSection = useRef('i1')
 
     const handleScrollSection = (id) => {
         const element = document.getElementById(id);
@@ -11,6 +12,7 @@ function Navitems() {
             behavior: 'smooth',
             block: 'start'
         })
+        window.history.pushState(null, "", `#${id}`)
         setActiveSection(id)
     }
 
@@ -25,7 +27,10 @@ function Navitems() {
                     currentSection = section.id;
                 }
             })
-            setActiveSection(currentSection)
+            if (lastActiveSection.current !== currentSection) {
+                setActiveSection(currentSection);
+                lastActiveSection.current = currentSection
+            }
         }
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll)

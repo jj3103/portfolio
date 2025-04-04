@@ -1,5 +1,6 @@
 import React from 'react'
-import { Logos } from '../components'
+import { Logos, Chatbot } from '../components'
+
 
 
 function Home() {
@@ -72,6 +73,7 @@ function Home() {
             <div className="w-full sm:w-1/2  sm:h-screen py-5 flex items-center justify-center">
                 <img src="/j1.jpeg" alt="Jayesh" className="w-full h-full object-contain" />
             </div>
+            <Chatbot />
         </section>
 
 

@@ -40,11 +40,11 @@ function Home() {
                     <div className="font-bold">
                         <div className="flex justify-between">
                             <h4>Email:</h4>
-                            <h4 className="pr-20 lg:pr-80">LinkedIn:</h4>
+                            <h4 className="pr-20  lg:pr-80">LinkedIn:</h4>
                         </div>
                         <div className="flex text-gray-400">
                             <h6>jainjayesh2003@gmail.com</h6>
-                            <h6 className="pl-4 md:pl-7">linkedin.com/in/jayesh-jain-developer</h6>
+                            <h6 className="pl-4 md:pl-2">linkedin.com/in/jayesh-jain-developer</h6>
                         </div>
                     </div>
 

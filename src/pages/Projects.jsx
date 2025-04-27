@@ -33,6 +33,13 @@ const projects = [
         description: "A full-stack HR system for managing personnel records, attendance, and roles. Built using the MERN stack with role-based authentication.",
         github: "https://github.com/jj3103/HR-management",
     },
+    {
+        id: 5,
+        name: "Warehouse Management",
+        image: "/WM-3.png",
+        description: "A full-stack HR system for managing personnel records, attendance, and roles. Built using the MERN stack with role-based authentication.",
+        github: "https://github.com/jj3103/warehouse-management",
+    },
 ];
 
 function Projects() {
